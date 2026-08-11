@@ -15,9 +15,8 @@ public class Solution {
         ListNode turtle = head;
 
         while(hare != null && hare.next != null){
-            turtle = turtle.next;
             hare = hare.next.next;
-            
+            turtle = turtle.next;
 
             if(hare == turtle){
                 return true;
